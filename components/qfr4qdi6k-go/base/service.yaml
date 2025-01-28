@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: qfr4qdi6k-go
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: qfr4qdi6k-go 
+  name: qfr4qdi6k-go
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: qfr4qdi6k-go 
